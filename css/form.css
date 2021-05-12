@@ -1,0 +1,22 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 25px;
+    padding: 20px;
+}
+
+.form__input {
+    border: 2px solid #ddd;
+    
+}
+
+.form__input::placeholder {
+    padding-left: 10px;
+}
+
+.form__button {
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+}
