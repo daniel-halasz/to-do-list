@@ -1,5 +1,6 @@
 .section__list {
     list-style: none;
+    padding: 0;
 }
 
 .section__listItem {
