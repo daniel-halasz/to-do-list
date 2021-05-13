@@ -7,4 +7,21 @@
     grid-template-columns: auto 1fr auto;
     border-bottom: 1px solid #ddd;
     padding: 10px;
+    align-items: center;
+}
+
+.section__listButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.section__listButton--done {
+    background-color: #008000;
+}
+
+.section__listButton--remove {
+    background-color: #f00;
 }
