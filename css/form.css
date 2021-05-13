@@ -5,9 +5,15 @@
     padding: 20px;
 }
 
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .form__input {
     border: 2px solid #ddd;
-    
+    padding: 10px;
 }
 
 .form__input::placeholder {
