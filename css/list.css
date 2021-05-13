@@ -16,6 +16,7 @@
     border: none;
     font-size: 16px;
     margin: 0 10px;
+    color: #fff;
 }
 
 .section__listButton--done {
@@ -24,4 +25,13 @@
 
 .section__listButton--remove {
     background-color: #f00;
+}
+
+.section__listTask {
+    word-break: break-word;
+    flex-basis: 100%;
+}
+
+.section__listTask--done {
+    text-decoration: line-through;
 }
