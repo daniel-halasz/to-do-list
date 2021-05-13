@@ -14,7 +14,7 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li>
+            <li class="section__listItem">
             ${task.content}
             </li>
             `;

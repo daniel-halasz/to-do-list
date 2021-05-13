@@ -1,3 +1,10 @@
 .section__list {
     list-style: none;
 }
+
+.section__listItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
