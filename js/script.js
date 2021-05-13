@@ -2,7 +2,7 @@
     const tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push ({
+        tasks.push({
             content: newTaskContent,
         });
 
@@ -14,13 +14,26 @@
         render();
     }
 
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
+        render();
+    }
+
     const addEvents = () => {
-        
+
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButtons, index) => {
             toggleDoneButtons.addEventListener("click", () => {
                 doneTask(index);
+            });
+        });
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButtons, index) => {
+            removeButtons.addEventListener("click", () => {
+                removeTask();
             });
         });
     }
@@ -34,10 +47,10 @@
             <button class="section__listButton section__listButton--done js-done">
             ${task.done ? "✓" : ""}</button>
 
-            <span class="section__listTask${task.done ? " section__listTask--done":""}">
+            <span class="section__listTask${task.done ? " section__listTask--done" : ""}">
             ${task.content}
             </span>
-            <button class="section__listButton section__listButton--remove"></button>
+            <button class="section__listButton section__listButton--remove js-remove">🗑</button>
             </li>
             `;
         }
