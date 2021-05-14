@@ -64,6 +64,10 @@
         newTask.focus();
     }
 
+    const focusInput = () => {
+        document.querySelector(".js-newTask").focus();
+    }
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
@@ -71,12 +75,13 @@
         const newTaskContent = newTask.value.trim();
 
         if (newTaskContent === "") {
+            focusInput();
             return;
         };
 
         addNewTask(newTaskContent);
-
         clearForm(newTask);
+
     };
 
     const init = () => {
