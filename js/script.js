@@ -33,7 +33,7 @@
 
         removeButtons.forEach((removeButtons, index) => {
             removeButtons.addEventListener("click", () => {
-                removeTask();
+                removeTask(index);
             });
         });
     }
