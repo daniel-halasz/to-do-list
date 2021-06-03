@@ -9,6 +9,12 @@
     border-bottom: 2px solid #ddd;
 }
 
+@media(max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
 .section__headerTitle {
     padding: 20px;
     margin: 0;

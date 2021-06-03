@@ -5,6 +5,13 @@
     margin: 15px;
 }
 
+@media(max-width: 767px) {
+    .buttons {
+        grid-template-columns: 1fr;
+        margin: 25px;
+    }
+}
+
 .buttons__task {
     border: none;
     color: #066;
