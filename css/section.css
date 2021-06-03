@@ -4,8 +4,12 @@
 }
 
 .section__header {
+    display: grid;
+    grid-template-columns: 2fr auto auto;
     border-bottom: 2px solid #ddd;
+}
+
+.section__headerTitle {
     padding: 20px;
     margin: 0;
 }
-

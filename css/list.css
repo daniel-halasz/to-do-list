@@ -53,3 +53,7 @@
 .section__listTask--done {
     text-decoration: line-through;
 }
+
+.section__listTask--hidden {
+    display: none;
+}
