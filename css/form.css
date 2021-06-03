@@ -21,10 +21,12 @@
     background-color: #008080;
     color: #fff;
     border: none;
+    transition: 1s;
 }
 
 .form__button:hover {
     background-color: #099;
+    transform: scale(1.2);
 }
 
 .form__button:active {
